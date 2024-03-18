@@ -411,14 +411,40 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .footer-form,
+    .footer-top,
     .footer-links-container {
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    .footer-links a,
-    .footer-socials a {
-        margin: 0 auto; /* Center-align the links */
-        display: block; /* Stack links */
+
+    .footer-logo {
+        margin-right: 0;
+    }
+
+    .left-links,
+    .right-links {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .footer-socials img {
+        width: 150px; /* Adjust social media icons size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-form {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .footer-form input,
+    .footer-form textarea,
+    .footer-form button {
+        width: calc(100% - 10px); /* Reduce padding for very small screens */
+    }
+
+    .footer-socials img {
+        width: 100px; /* Further reduce social media icons size for very small screens */
     }
 }
 
