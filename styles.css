@@ -1,0 +1,1008 @@
+html {
+    font-size: 15px;
+}
+
+header {
+    background: #FFFFFF;
+    /* Other styles for header */
+}
+
+/* Add this to your styles.css */
+.upper-bar {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.lower-bar {
+    height: 81px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.header-content {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-page {
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 74px;
+    height: 90px;
+    margin-left: 159px;
+}
+
+.title {
+    margin-left: 10px;
+    font-family: Baumans;
+    font-size: 29px;
+    font-weight: 400; /* Space between logo and title */
+    /* Add other styling for title (font-size, color) as needed */
+}
+
+nav {
+    /* If additional styling is needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    padding: 0 15px; /* Adjust spacing between nav items as needed */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF; /* Change color as needed */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+/* Add responsive behavior as needed */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        top: 10px;
+        left: 159px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 5px 0;
+    }
+}
+
+nav ul {
+    list-style: none;
+    /* Other styles for navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    /* Other styles for navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #001936;
+    font-weight: 600;
+    /* Other styles for links */
+}
+
+body {
+    background-color: #F7F5F3;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #001936;
+}
+
+/* Add this to your styles.css */
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.our-value-container {
+    max-width: 1220px; /* Adjust to the width of your content area */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
+.our-value-heading {
+    text-align: left;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the heading */
+    margin-left: 1%;
+}
+
+.value-items {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the items */
+    flex-wrap: wrap; /* Allow the boxes to wrap onto the next line */
+    gap: 20px; /* Adjust the gap between the items as needed */
+}
+
+.value-item-first {
+    background: #D17060; /* Use a light background, or as per your design */
+    border-radius: 20px 0 20px 0; /* Rounded corners as seen in the mockup */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    flex-basis: calc(25% - 20px); /* 4 items per row, accounting for the gap */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+    padding: 20px; /* Padding within the boxes */
+    box-sizing: border-box; /* Include padding in the box's width */
+    position: relative;
+
+}
+
+.value-icon-first {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.value-item-second {
+    background: #779E9C; /* Use a light background, or as per your design */
+    border-radius: 20px 0 20px 0; /* Rounded corners as seen in the mockup */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    flex-basis: calc(25% - 20px); /* 4 items per row, accounting for the gap */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+    padding: 20px; /* Padding within the boxes */
+    box-sizing: border-box; /* Include padding in the box's width */
+    position: relative;
+}
+
+.value-icon-second {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.value-item-third {
+    background: #EA876C; /* Use a light background, or as per your design */
+    border-radius: 20px 0 20px 0; /* Rounded corners as seen in the mockup */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    flex-basis: calc(25% - 20px); /* 4 items per row, accounting for the gap */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+    padding: 20px; /* Padding within the boxes */
+    box-sizing: border-box; /* Include padding in the box's width */
+    position: relative;
+}
+
+.value-icon-third {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.value-item-fourth {
+    background: #A7DBC0; /* Use a light background, or as per your design */
+    border-radius: 20px 0 20px 0; /* Rounded corners as seen in the mockup */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    flex-basis: calc(25% - 20px); /* 4 items per row, accounting for the gap */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+    padding: 20px; /* Padding within the boxes */
+    box-sizing: border-box; /* Include padding in the box's width */
+    position: relative;
+}
+
+.value-icon-fourth {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.value-item-first h3, .value-item-second h3, .value-item-third h3  {
+    margin-top: 20px;
+    margin-bottom: 0; /* Adjust as needed to ensure uniform start of text */
+    margin-right: 40px;
+}
+
+.value-item-fourth h3 {
+    margin-top: 0;
+    margin-bottom: 0; /* Adjust as needed to ensure uniform start of text */
+    margin-right: 40px;
+}
+
+.value-item-first p {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.value-item-second p, .value-item-third p {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.value-item-fourth p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1200px) {
+    .value-item {
+        flex-basis: calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .value-item {
+        flex-basis: 100%; /* 1 item per row on mobile screens */
+    }
+}
+
+footer {
+    background-color: #8CDAB1;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 735px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Place logo and form side by side */
+    align-items: start; /* Align items to the start of the flex container */
+    margin-bottom: 10px; /* Space between this section and the links */
+}
+
+.footer-logo {
+    flex: 0 auto;
+    margin-right: -200px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 10px;
+}
+
+.footer-form h3 {
+    font-weight: 600;
+    color: #001936;
+}
+
+.footer-form input,
+.footer-form textarea,
+.footer-form button {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.footer-form button {
+    background-color: #355FFE;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between button and links */
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: row; /* Adjust this if you want the links in a row or column based on your design */
+    justify-content: center; /* Centers the links container horizontally */
+    flex-wrap: wrap; /* Allows the link items to wrap on smaller screens */
+    align-items: center; /* Vertically centers the items */
+    width: 100%; /* Takes full width of its parent */
+    margin: 0 auto; /* Centers the container */
+    margin-left: 1%;
+    gap: 20px;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px; /* Space between the two columns */
+}
+
+.left-links a,
+.right-links a {
+    /* Styling for the anchor tags */
+    text-decoration: none;
+    color: #001936; /* Footer link color */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight: 600;
+    margin-bottom: 8px; /* Space between the links */
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center; /* Center the social icons container horizontally */
+    align-items: center; /* Vertically centers the items */
+    width: 100%; /* Ensures the socials container spans the full width */
+    margin: 0 auto; /* Adds space above and centers the container, adjust as needed */
+    gap: 20px;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Social media images should be small enough to fit the design */
+.footer-socials img {
+    width: 200px; /* Example size, adjust as needed */
+    height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-form,
+    .footer-links-container {
+        max-width: 100%;
+    }
+    .footer-links a,
+    .footer-socials a {
+        margin: 0 auto; /* Center-align the links */
+        display: block; /* Stack links */
+    }
+}
+
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-container {
+    background-color: #F7F5F3;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-us-title {
+    font-size: 29px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 1%;
+}
+
+.mission-statement {
+    font-size: 25px;
+    max-width: 1220px;
+    height: auto;
+    margin-right: 20px; /* Centers the box */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 20px; /* Adjust as per design */
+    background-color: #D9D9D9; /* Or any other color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+    text-align: left; /* Centers the text */
+    margin-bottom: 30px; /* Space after the statement box */
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-photo {
+    width: 285px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 20px 0 20px 0; 
+}
+
+.team-bio {
+    font-size: 25px;
+    width: 950px;
+    height: 358px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Laney's bio */
+.laney-bio {
+    background-color: #92D3B1;
+    border-radius: 20px 0 20px 0;
+    /* Additional styles for Laney */
+}
+
+/* Spencer's bio */
+.spencer-bio {
+    background-color: #E2542E;
+    border-radius: 20px 0 20px 0;
+    /* Additional styles for Spencer */
+}
+
+/* Ceci's bio */
+.ceci-bio {
+    background-color: #3E7572;
+    border-radius: 20px 0 20px 0;
+    /* Additional styles for Ceci */
+}
+
+/* Jonas's bio */
+.jonas-bio {
+    background-color: #BE331C;
+    border-radius: 20px 0 20px 0;
+    /* Additional styles for Jonas */
+}
+
+/* Add responsive behavior */
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .team-photo {
+        margin-bottom: 10px;
+    }
+    
+    .team-bio {
+        text-align: center;
+    }
+}
+
+.services-section {
+    text-align: left;
+    padding: 20px;
+    background: #F7F5F3; /* Assuming there's a light gray background as commonly seen in mockups */
+}
+
+.services-title {
+    font-size: 29px;
+    text-align: left;
+    margin-left: 1%;
+    margin-bottom: 40px; /* Increased space below the title */
+    /* Add other styles for the title if needed */
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-evenly; /* Distributes space around items */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px; /* Space before the lone item */
+}
+
+.service-item {
+    height: 390px;
+    width: calc(33.333% - 20px); /* Adjust the width to account for the gap, for three items per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: #ffffff; /* White background for the content */
+    padding: 0; /* Remove padding to allow the image to extend fully */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    position: relative; /* Set position for absolute positioning of the image */
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners as specified */
+    overflow: hidden; /* Ensures no overflow outside of the border radius */
+    border: 1px solid #CDD1E0;
+    /* Add other styles as needed */
+} 
+
+.service-item h3 {
+    margin-left: 15px; /* Adds padding inside the heading */
+    /* Other styles... */
+}
+
+.service-item p {
+    margin-left: 15px; /* Adds padding inside the paragraph */
+    /* Other styles... */
+}
+
+.service-item-lone {
+    width: 50%; /* Full width minus padding */
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Same shadow as above */
+    border-radius: 0 0 20px 20px; /* Same rounded corners as above */
+    background: #ffffff; /* Same background color as above */
+    padding: 0; /* Same padding as above */
+    box-sizing: border-box; /* Same box-sizing as above */
+    margin: 0 auto; /* Center the box */
+    /* Add other styles as needed */
+}
+
+.service-item-lone h3 {
+    margin-left: 15px; /* Adds padding inside the heading */
+    /* Other styles... */
+}
+
+.service-item-lone p {
+    margin-left: 15px;
+}
+
+.service-item-lone img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Set a fixed height for the images */
+    object-fit: cover; /* This will crop the images to fill the container */
+}
+
+.service-image {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 0 0 0 0; /* Round top corners to match the container */
+    margin-bottom: 0; /* Space between the image and the text */
+}
+
+.service-item img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* This will crop the images to fill the container */
+}
+
+@media (max-width: 1024px) {
+    .service-item, .service-item-lone {
+        width: calc(50% - 20px); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid, .service-item-lone {
+        justify-content: center;
+    }
+
+    .service-item, .service-item-lone {
+        width: calc(100% - 40px); /* 1 item per row on small screens */
+    }
+}
+
+.mission-container {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: 0 auto;
+    gap: 75px; /* This will create space between the two cards */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .mission-container h2 {
+    font-family: 'Inter', sans-serif; /* Consistent font family */
+    font-size: 30; /* Suitable size for main heading */
+    font-weight: 600; /* Bold weight for emphasis */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+  
+  .card {
+    flex: 1; /* This will ensure that both cards take equal space */
+    display: flex;
+    flex-direction: column; /* Stack the image and content vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 0 0 20px 20px; /* Rounded corners as seen in the mockup */
+    overflow: hidden;
+    border: 1px solid #CDD1E0;
+  }
+  
+  .card img {
+    width: 100%; /* Ensure the image fills the container width */
+    height: 45%; /* Keep the image's aspect ratio */
+    align-self: center; /* Center the image in the flex container */
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: center; /* Align the text to the left */
+    flex-grow: 1; /* This will push the content to occupy the remaining space */
+  }
+
+  .statistics-container {
+    display: flex;
+    justify-content: space-around; /* This will space out the statistic items evenly */
+    align-items: center; /* This will vertically center the items */
+    text-align: center;
+    background-color: #92D3B1; /* The specified background color */
+    color: black; /* Font color set to black */
+    height: 150px; /* The specified height */
+    width: 100%; /* Full width of the container */
+    margin-top: 0;
+  }
+  
+  .statistic .number {
+    font-size: 30px; /* The specified font size for headlines */
+    font-weight: 400; /* Makes the font bold */
+  }
+  
+  .statistic .description {
+    font-size: 17px; /* The specified font size for sublines */
+    font-weight: 400; /* Regular font weight for sublines */
+  }
+
+  .start-guide-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.image-section {
+    flex: 1; /* Adjust as needed, this will allow image sections to take up equal space */
+    display: flex;
+    justify-content: center; /* This centers the image in the div */
+}
+
+.image-section.left {
+    justify-content: flex-start; /* Aligns the image to the left */
+}
+
+.image-section.right {
+    justify-content: flex-end; /* Aligns the image to the right */
+}
+
+.image-section img {
+    width: auto; /* Maintain the image's aspect ratio */
+    max-width: 100%; /* Ensure the image is not larger than the container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.text-section {
+    flex: 3; /* This makes the text section larger than the image sections */
+}
+
+.text-section h2 {
+    font-family: 'Inter Tight', sans-serif; /* Adjust the font family if needed */
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: 600; /* Adjust the font weight as needed */
+    text-align: center;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.text-section ol {
+    font-family: 'Inter Tight';
+    font-size: 30px;
+    font-weight: 100;
+    counter-reset: step-counter; /* Initialize a CSS counter */
+    list-style-type: none; /* Remove default list styles */
+    padding-left: 0; /* Remove padding */
+}
+
+.text-section ol li {
+    counter-increment: step-counter; /* Increment the counter */
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 20px; /* Space between items */
+    position: relative; /* For positioning the pseudo-element */
+    padding-left: 45px; /* Space for the circle */
+}
+
+.text-section ol li::before {
+    content: counter(step-counter); /* Display the counter */
+    position: absolute;
+    left: 20px; /* Align to the left of the list item */
+    width: 35px; /* Width of the circle */
+    height: 35px; /* Height of the circle */
+    line-height: 35px; /* Center the number vertically */
+    border: 0.5px solid black; /* Circle border */
+    border-radius: 50%; /* Make it round */
+    text-align: center; /* Center the number horizontally */
+    font-family: 'Inter Tight';
+    font-size: 20px; /* Size of the number */
+    font-weight: 100; /* Make the number bold */
+}
+
+.community-spotlight, .community-events {
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: left; /* Aligns text to the left */
+    padding-left: 15px; /* Matches the padding of the .card-container */
+    margin-left: auto; /* Ensures alignment with the .card-container */
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 75%; /* Matches the width of the .card-container */
+}
+
+.card-container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Distributes space around items evenly */
+    margin-left: auto; /* Centers the container on the left */
+    margin-right: auto; /* Centers the container on the right */
+    padding: 0; /* Removes padding if not needed */
+}
+
+.card-community {
+    flex: 1;
+    height: 400px;
+    margin: 0 15px; /* This creates space between the cards */
+    margin-bottom: 50px;
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets the text color */
+    border-radius: 0 0 20px 20px; /* Rounded corners as seen in the mockup */
+    border: 1px solid #CDD1E0; /* Border color like in the mission section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow like in the mission section */
+    overflow: hidden; /* Ensures contents fit within the border radius */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.card-community:hover {
+    transform: translateY(-5px); /* Lifts card on hover */
+}
+
+.card-community img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.card-community h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-community p {
+    font-size: 14px;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.who-we-are-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E6F6; /* or any color that matches your design */
+    width: 100%; /* Fill the width */
+    padding: 20px; /* Spacing inside the section */
+  }
+
+  .logo-container {
+    margin-right: 20px; /* Adjust the spacing between the logo and the text */
+}
+  
+  .logo-container img {
+    max-width: 100%; /* Adjust the size of the logo */
+    height: auto;
+  }
+  
+  .content-container {
+    max-width: 600px; /* Adjust based on your layout requirements */
+  }
+  
+  .subheading {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px; /* Adjust the space below the subheading */
+  }
+  
+  .content-container h1 {
+    font-size: 24px; /* Adjust to match your design */
+    color: #000;
+    margin-bottom: 16px; /* Adjust the space below the heading */
+  }
+  
+  .content-container p {
+    font-size: 18px; /* Adjust to match your design */
+    color: #666;
+    margin-bottom: 24px; /* Adjust the space below the paragraph */
+  }
+  
+  .cta-button {
+    display: inline-block; /* Allows setting padding and margins */
+    padding: 10px 20px; /* Size of the button */
+    background-color: #49516F; /* Dark grey background */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Make the button text bold */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #525971; /* Slightly lighter grey on hover */
+}
+
+.ambition-action-section {
+    width: 100%; /* Ensures the container takes up the full width of the viewport */
+    height: 720px; /* Sets the height of the section */
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #92D3B1; /* Background color */
+    color: #001936; /* Text color */
+    border-radius: 0; /* Removes rounded corners to fill the width completely */
+    overflow: hidden;
+    margin: 0;
+}
+
+.image-left-container, .image-right-container {
+    position: absolute; /* Position these containers absolutely within .ambition-action-section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-left-container {
+    left: 25%; /* Adjust this value to move closer to or further from the center */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Adjusts positioning */
+}
+
+.image-right-container {
+    right: 30%; /* Similar adjustment as for the left container */
+    top: 45%; /* This positions the container starting at 50% of the parent's height from the top */
+    transform: translate(50%, -50%); /* Adjusts positioning */
+}
+
+.image-left-container img {
+    width: 100%;
+    max-width: 65%; /* Adjust as necessary */
+    max-height: 80vh; /* Adjust as necessary */
+    border-radius: 20px;
+    object-fit: contain;
+    position: relative; /* Ensure z-index is respected */
+}
+
+.image-right-container img {
+    max-width: 65%; /* Limit the maximum width to ensure images fit within their containers */
+    max-height: 80vh; /* Limit the maximum height based on the viewport height */
+    margin-bottom: 20px;
+    border-radius: 20px;
+    object-fit: contain; /* Ensures the aspect ratio is maintained without cropping */
+}
+
+.image-left-container img:last-child  {
+    margin-bottom: -20px;
+    z-index: 1
+}
+
+.image-right-container img:last-child {
+    margin-bottom: 0;
+}
+
+.text-containers {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute; /* Allows absolute positioning for children */
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 190px;
+    margin-left: 10%;
+    background-color: transparent; /* No background here, it's on the children */
+}
+
+.heading-container {
+    height: auto;
+    width: 50%;
+    background-color: rgba(62, 118, 115, 0.8); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: -5px;
+    z-index: 2;
+}
+
+.heading-container h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #001936;
+    margin: 0;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.paragraph-container {
+    width: 25%;
+    background-color: rgba(255, 184, 162, 0.8); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 85%;
+    right: 65%;
+    z-index: 2;
+}
+
+.paragraph-container p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #001936;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .text-containers {
+        position: static; /* Avoid absolute positioning on smaller screens */
+        transform: none;
+        margin-top: 20px;
+        width: auto; /* Adjust width based on the content */
+        max-width: 90%; /* Ensure some margin around the containers */
+    }
+
+    .heading-container, .paragraph-container {
+        width: auto; /* Allow containers to fit content width */
+        margin: 10px auto; /* Provide some spacing */
+    }
+
+    .heading-container h2, .paragraph-container p {
+        font-size: calc(1.5rem + 1vw); /* Slightly larger font for better readability on small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
