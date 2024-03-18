@@ -247,7 +247,7 @@
             </div>
             <div class="footer-form">
                 <h3>Send us a Message</h3>
-                <form action="submit-form" method="POST">
+                <form onsubmit="event.preventDefault(); sendEmail();">
                     <div class="form-group">
                         <input type="text" id="first-name" name="first-name" placeholder="First Name">
                         <input type="text" id="last-name" name="last-name" placeholder="Last Name">
@@ -257,7 +257,19 @@
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        </div>
+            
+            <script>
+                function sendEmail() {
+                    var firstName = document.getElementById('first-name').value;
+                    var lastName = document.getElementById('last-name').value;
+                    var email = document.getElementById('email').value;
+                    var message = document.getElementById('message').value;
+                
+                    var emailBody = `First Name: ${firstName}%0ALast Name: ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
+                    
+                    window.location.href = `mailto:locallink.newhaven@gmail.com?subject=Message from ${firstName} ${lastName}&body=${emailBody}`;
+                }
+            </script>
         <div class="footer-links-container">
             <div class="left-links">
                 <a href="#">Financial and Policies</a>
