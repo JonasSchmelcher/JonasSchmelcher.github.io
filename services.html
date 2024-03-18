@@ -88,6 +88,7 @@
                 </div>
                 <div class="footer-form">
                     <h3>Send us a Message</h3>
+                    <form onsubmit="event.preventDefault(); sendEmail();">
                     <form action="submit-form" method="POST">
                         <div class="form-group">
                             <input type="text" id="first-name" name="first-name" placeholder="First Name">
@@ -96,37 +97,38 @@
                         <input type="email" id="email" name="email" placeholder="Email Address">
                         <textarea id="message" name="message" placeholder="Message"></textarea>
                         <button type="submit">Submit</button>
-                        <script>function sendEmail() {
-                            var firstName = document.getElementById('first-name').value;
-                            var lastName = document.getElementById('last-name').value;
-                            var email = document.getElementById('email').value;
-                            var message = document.getElementById('message').value;
-                        
-                            var emailBody = `First Name: ${firstName}%0ALast Name: ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
-                            
-                            window.location.href = `mailto:locallink.newhaven@gmail.com?subject=Message from ${firstName} ${lastName}&body=${emailBody}`;
-                        }
-                        </script>
                     </form>
                 </div>
+                <script>
+                    function sendEmail() {
+                        var firstName = document.getElementById('first-name').value;
+                        var lastName = document.getElementById('last-name').value;
+                        var email = document.getElementById('email').value;
+                        var message = document.getElementById('message').value;
+                    
+                        var emailBody = `First Name: ${firstName}%0ALast Name: ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
+                        
+                        window.location.href = `mailto:locallink.newhaven@gmail.com?subject=Message from ${firstName} ${lastName}&body=${emailBody}`;
+                    }
+                </script>
             </div>
-        <div class="footer-links-container">
-            <div class="left-links">
-                <a href="#">Financial and Policies</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
+            <div class="footer-links-container">
+                <div class="left-links">
+                    <a href="#">Financial and Policies</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="right-links">
+                    <a href="#">FAQs/Contact Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">API</a>
+                    <a href="#">Sponsorship</a>
+                </div>
             </div>
-            <div class="right-links">
-                <a href="#">FAQs/Contact Us</a>
-                <a href="#">Careers</a>
-                <a href="#">API</a>
-                <a href="#">Sponsorship</a>
+            <div class="footer-socials">
+                <a href="#"><img src="Socials.png" alt="Socials"></a>
             </div>
         </div>
-        <div class="footer-socials">
-            <a href="#"><img src="Socials.png" alt="Socials"></a>
-        </div>
-    </div>
 </footer>
 </body>
 </html>
