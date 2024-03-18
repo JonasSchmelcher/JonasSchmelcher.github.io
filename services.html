@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalLink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Baumans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="upper-bar" style="background-color: #3E7673;"></div>
+        <div class="lower-bar" style="background-color: #FFB8A2;">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="/home.html">
+                        <img src="LogoLL.png" alt="LocalLink Logo" class="header-logo"> 
+                    </a>
+                    <span class="title">LocalLink</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/services.html" class="active-page">Our Services</a></li>
+                        <li><a href="/value.html">Our Value</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('nav ul li a'); // Select all navigation links
+    
+        navLinks.forEach(function(link) {
+            link.addEventListener('mouseover', function() {
+                this.style.color = '#DD9680'; // Change the text color on hover
+                this.style.textDecoration = 'underline'; // Underline the link on hover
+            });
+    
+            link.addEventListener('mouseout', function() {
+                this.style.color = ''; // Reset the text color when not hovering
+                this.style.textDecoration = ''; // Remove underline when not hovering
+            });
+        });
+    });
+    </script>
+    <main>
+        <!-- Our Services Section -->
+        <section id="services" class="services-section">
+            <h2 class="services-title">Our Services</h2>
+            <div class="services-grid">
+                <!-- Service Item 1 -->
+                <div class="service-item">
+                    <img src="OurServices1.png" alt="CSR Strategy Development" class="service-image">
+                    <h3>CSR Strategy Development</h3>
+                    <p>This service includes identifying key areas of impact, setting measurable goals, and creating 
+                        actionable plans to achieve those goals while optimizing CSR spending.</p>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="service-item">
+                    <img src="OurServices2.png" alt="Partnership Facilitation" class="service-image">
+                    <h3>Partnership Facilitation</h3>
+                    <p>We facilitate partnerships between businesses and non-profits, connecting those with shared visions to enhance social impact.</p>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="service-item">
+                    <img src="OurServices3.png" alt="Impact Measurement and Reporting" class="service-image">
+                    <h3>Impact Measurement and Reporting</h3>
+                    <p>LocalLink offers comprehensive impact measurement and reporting services, establishing KPIs, analyzing data, 
+                        and delivering insightful reports to showcase CSR achievements and areas for growth.</p>
+                </div>
+                <!-- Service Item 4 -->
+                <div class="service-item-lone">
+                    <img src="OurServices4.png" alt="Employee Engagement Programs" class="service-image">
+                    <h3>Employee Engagement Programs</h3>
+                    <p>We specialize in crafting and executing CSR-centric employee engagement programs, fostering volunteerism, 
+                        environmental stewardship, and community service. Our initiatives not only boost morale and strengthen company culture but also magnify the overall impact of CSR efforts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="LogoLL.png" alt="LocalLink Logo">
+                </div>
+                <div class="footer-form">
+                    <h3>Send us a Message</h3>
+                    <form action="submit-form" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                        <script>function sendEmail() {
+                            var firstName = document.getElementById('first-name').value;
+                            var lastName = document.getElementById('last-name').value;
+                            var email = document.getElementById('email').value;
+                            var message = document.getElementById('message').value;
+                        
+                            var emailBody = `First Name: ${firstName}%0ALast Name: ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
+                            
+                            window.location.href = `mailto:locallink.newhaven@gmail.com?subject=Message from ${firstName} ${lastName}&body=${emailBody}`;
+                        }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        <div class="footer-links-container">
+            <div class="left-links">
+                <a href="#">Financial and Policies</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="right-links">
+                <a href="#">FAQs/Contact Us</a>
+                <a href="#">Careers</a>
+                <a href="#">API</a>
+                <a href="#">Sponsorship</a>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <a href="#"><img src="Socials.png" alt="Socials"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

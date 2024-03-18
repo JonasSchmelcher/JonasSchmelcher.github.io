@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalLink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="upper-bar" style="background-color: #3E7673;"></div>
+        <div class="lower-bar" style="background-color: #FFB8A2;">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="/home.html">
+                        <img src="LogoLL.png" alt="LocalLink Logo" class="header-logo">
+                    </a> 
+                    <span class="title">LocalLink</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/services.html">Our Services</a></li>
+                        <li><a href="/value.html" class="active-page">Our Value</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('nav ul li a'); // Select all navigation links
+    
+        navLinks.forEach(function(link) {
+            link.addEventListener('mouseover', function() {
+                this.style.color = '#DD9680'; // Change the text color on hover
+                this.style.textDecoration = 'underline'; // Underline the link on hover
+            });
+    
+            link.addEventListener('mouseout', function() {
+                this.style.color = ''; // Reset the text color when not hovering
+                this.style.textDecoration = ''; // Remove underline when not hovering
+            });
+        });
+    });
+    </script>
+    <main>
+        <div class="our-value-container">
+            <h2 class="our-value-heading">Our Value</h2>
+            <div class="value-items">
+                <article class="value-item value-item-first">
+                    <img src="IntegrityIcon.png" alt="Integrity Icon" class="value-icon-first">
+                    <h3>Integrity and Transparency</h3>
+                    <p>LocalLink commits to honest and open communication with all clients, ensuring 
+                        transparency in how CSR strategies are developed, implemented, and measured. This builds trust and fosters genuine, lasting relationships.</p>
+                </article>
+                <article class="value-item value-item-second">
+                    <img src="ValueIconSecond.png" alt="CustomizedSolutions Icon" class="value-icon-second">
+                    <h3>Customized Solutions</h3>
+                    <p>Understanding that each business and non-profit has unique needs and goals, LocalLink offers 
+                        personalized service, tailoring CSR strategies to match the specific objectives, values, and capabilities of each client.</p>
+                </article>
+                <article class="value item value-item-third">
+                    <img src="ValueIconThird.png" alt="ImpactEngagement Icon" class="value-icon-third">
+                    <h3>Impact Engagement</h3>
+                    <p>LocalLink values the creation of meaningful, impact CSR initiatives that not only benefit the community and environment 
+                        but also align with the client's brand and business goals, ensuring that every project has a positive and measurable impact.</p>
+                </article>
+                <article class=" value-item value-item-fourth">
+                    <img src="ValueIconFourth.png" alt="AdaptabilityAndContinuousImprovement Icon" class="value-icon-fourth">
+                    <h3>Adaptability and Continuous Improvement</h3>
+                    <p>Recognizing the evolving nature of CSR and the challenges it presents, LocalLink is committed to staying adaptable, 
+                        learning from each project, and continuously improving services to meet the changing needs of clients and communities.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="LogoLL.png" alt="LocalLink Logo">
+                </div>
+                <div class="footer-form">
+                    <h3>Send us a Message</h3>
+                    <form action="submit-form" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                        <script>function sendEmail() {
+                            var firstName = document.getElementById('first-name').value;
+                            var lastName = document.getElementById('last-name').value;
+                            var email = document.getElementById('email').value;
+                            var message = document.getElementById('message').value;
+                        
+                            var emailBody = `First Name: ${firstName}%0ALast Name: ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
+                            
+                            window.location.href = `mailto:locallink.newhaven@gmail.com?subject=Message from ${firstName} ${lastName}&body=${emailBody}`;
+                        }
+                        </script>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-links-container">
+                <div class="left-links">
+                    <a href="#">Financial and Policies</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="right-links">
+                    <a href="#">FAQs/Contact Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">API</a>
+                    <a href="#">Sponsorship</a>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><img src="Socials.png" alt="Socials"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
