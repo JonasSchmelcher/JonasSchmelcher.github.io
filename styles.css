@@ -70,22 +70,44 @@ nav a {
 
 /* Add responsive behavior as needed */
 @media (max-width: 768px) {
+    .header-content,
+    .logo-container,
+    .lower-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-logo {
+        margin: 0 auto; /* Center the logo */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+
+    .title {
+        margin: 0; /* Remove margin */
+    }
+
     .header-content {
-        flex-direction: column;
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
 
-    .logo-container {
-        top: 10px;
-        left: 159px;
+    .nav ul {
+        padding: 0;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    .nav li {
+        display: block; /* Stack the navigation items */
+        margin-top: 10px; /* Add space between stacked items */
+    }
+}
+
+/* Further reduce font size and adjust layout for very small screens */
+@media (max-width: 480px) {
+    .header-content {
+        font-size: 14px;
     }
 
-    nav li {
-        padding: 5px 0;
+    .title {
+        font-size: 24px; /* Make the title smaller */
     }
 }
 
