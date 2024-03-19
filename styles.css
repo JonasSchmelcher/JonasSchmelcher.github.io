@@ -13,7 +13,7 @@ header {
 }
 
 .lower-bar {
-    height: 81px; /* Adjust the height as needed */
+    height: 86px; /* Adjust the height as needed */
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -40,6 +40,8 @@ header {
     width: 74px;
     height: 90px;
     margin-left: 159px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .title {
