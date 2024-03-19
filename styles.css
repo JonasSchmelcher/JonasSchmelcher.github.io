@@ -82,6 +82,7 @@ nav a {
     .header-logo {
         margin: 0 auto; /* Center the logo */
         margin-bottom: 10px; /* Add space below the logo */
+        margin-top: 10px;
     }
 
     .title {
