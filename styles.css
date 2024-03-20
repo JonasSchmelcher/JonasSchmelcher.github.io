@@ -266,17 +266,22 @@ body, h1, ul, li {
 }
 
 .value-item-first p {
-    margin-top: 8px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.value-item-second p, .value-item-third p {
-    margin-top: 35px;
+.value-item-second p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+value-item-third p {
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .value-item-fourth p {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
