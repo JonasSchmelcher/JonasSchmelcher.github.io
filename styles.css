@@ -561,8 +561,7 @@ body, h1, h2, p, img {
     font-size: 29px;
     text-align: left;
     margin-left: 2%;
-    margin-bottom: 40px; /* Increased space below the title */
-    /* Add other styles for the title if needed */
+    margin-bottom: 20px;
 }
 
 .services-grid {
@@ -591,8 +590,6 @@ body, h1, h2, p, img {
 
 .service-item h3 {
     margin-left: 15px; /* Adds padding inside the heading */
-    margin-bottom: 20px;
-    /* Other styles... */
 }
 
 .service-item p {
