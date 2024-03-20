@@ -561,7 +561,7 @@ body, h1, h2, p, img {
 .services-title {
     font-size: 29px;
     text-align: left;
-    margin-left: 3%;
+    margin-left: 2%;
     margin-bottom: 40px; /* Increased space below the title */
     /* Add other styles for the title if needed */
 }
