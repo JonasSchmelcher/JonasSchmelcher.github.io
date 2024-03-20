@@ -158,7 +158,7 @@ body, h1, ul, li {
     font-size: 29px;
     font-weight: bold;
     margin-bottom: 20px; /* Space below the heading */
-    margin-left: 1%;
+    margin-left: 20px;
 }
 
 .value-items {
@@ -253,14 +253,8 @@ body, h1, ul, li {
     height: auto;
 }
 
-.value-item-first h3, .value-item-second h3, .value-item-third h3  {
+.value-item-first h3, .value-item-second h3, .value-item-third h3, .value-item-fourth h3  {
     margin-top: 20px;
-    margin-bottom: 0; /* Adjust as needed to ensure uniform start of text */
-    margin-right: 40px;
-}
-
-.value-item-fourth h3 {
-    margin-top: 0;
     margin-bottom: 0; /* Adjust as needed to ensure uniform start of text */
     margin-right: 40px;
 }
