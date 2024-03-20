@@ -148,7 +148,7 @@ body, h1, ul, li {
 
 
 .our-value-container {
-    max-width: 1220px; /* Adjust to the width of your content area */
+    width: 90%; /* Adjust to the width of your content area */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add some padding */
 }
