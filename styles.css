@@ -572,6 +572,8 @@ body, h1, h2, p, img {
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 40px; /* Space before the lone item */
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .service-item {
